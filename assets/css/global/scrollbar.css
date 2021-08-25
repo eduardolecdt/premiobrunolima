@@ -1,7 +1,7 @@
 /* Scrollbar */
 
 html {
-  scrollbar-color: #7E7F40 #FFFFFF;
+  scrollbar-color: #0048FF #FFFFFF;
   scrollbar-width: thin;
 }
 
@@ -19,7 +19,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #7E7F40;
+  background-color: #0048FF;
   width: 4px;
   height: 4px;
   border-radius: 10px;

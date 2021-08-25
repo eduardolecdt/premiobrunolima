@@ -1,7 +1,18 @@
 /* index <footer> */
 
 footer {
-  display: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: var(--cor-preto);
+  padding: 24px 80px;
+}
+
+footer p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-texto-claro);
+  line-height: 1.7;
 }
 
 /* Responsivo */

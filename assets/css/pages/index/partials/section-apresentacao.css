@@ -1,13 +1,85 @@
 /* index <section class="apresentacao"> */
 
 section.apresentacao {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 80px;
   background-image: url('../../../../../files/images/index/background-preto.png');
   background-size: cover;
   background-position: center;
+  position: relative;
+  min-height: 600px;
+}
+
+section.apresentacao img.principal {
+  position: absolute;
+  right: 80px;
+  top: 235px;
+  width: auto;
+  height: 600px;
+}
+
+section.apresentacao .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 650px;
+  padding: 80px 0 0 0;
+}
+
+section.apresentacao .texto h1 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+}
+
+section.apresentacao .texto h1 span {
+  color: var(--cor-rosa);
+}
+
+section.apresentacao .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-texto-claro);
+  line-height: 1.7;
+  padding: 20px 0 30px 0;
+}
+
+section.apresentacao .texto button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-azul);
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+section.apresentacao .texto button:hover {
+  background-color: var(--cor-rosa);
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 30px;
+    min-height: 700px;
+  }
+  section.apresentacao img.principal {
+    right: 30px;
+    top: 460px;
+    height: 400px;
+  }
+  section.apresentacao .texto {
+    padding: 130px 0 0 0;
+  }
 }

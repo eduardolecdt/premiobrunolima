@@ -1,13 +1,148 @@
 /* index <section class="comprar"> */
 
 section.comprar {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
   background-image: url('../../../../../files/images/index/background-preto.png');
   background-size: cover;
   background-position: center;
+  padding: 80px;
+}
+
+section.comprar img.linhas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+section.comprar .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+section.comprar .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+}
+
+section.comprar .texto h2 span {
+  color: var(--cor-azul);
+}
+
+section.comprar .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-texto-claro);
+  line-height: 1.7;
+  padding: 20px 0 50px 0;
+}
+
+section.comprar .planos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+
+section.comprar .planos .plano {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 32%;
+  max-width: 400px;
+  padding: 50px 30px 30px 30px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(25px);
+  position: relative;
+}
+
+section.comprar .planos .plano img.selo {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 100%;
+  max-width: 100px;
+}
+
+section.comprar .planos .plano img.rifa {
+  width: 100%;
+  max-width: 80%;
+}
+
+section.comprar .planos .plano h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  padding: 30px 0 0 0;
+}
+
+section.comprar .planos .plano p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-texto-claro);
+  line-height: 1.7;
+  padding: 20px 0 30px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+section.comprar .planos .plano button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-azul);
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+section.comprar .planos .plano button:hover {
+  background-color: var(--cor-rosa);
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.comprar {
+    padding: 50px 30px;
+  }
+  section.comprar .texto p {
+    padding: 10px 0 10px 0;
+  }
+  section.comprar .planos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.comprar .planos .plano {
+    width: 100%;
+    padding: 50px 30px 30px 30px;
+    border-radius: 20px;
+    margin: 30px 0 0 0;
+  }
+  section.comprar .planos .plano img.selo {
+    right: -20px;
+    max-width: 80px;
+  }
+  section.comprar .planos .plano img.rifa {
+    max-width: 100%;
+  }
 }

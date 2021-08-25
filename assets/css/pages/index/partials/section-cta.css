@@ -1,13 +1,65 @@
 /* index <section class="cta"> */
 
 section.cta {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 80px;
   background-image: url('../../../../../files/images/index/background-branco.png');
   background-size: cover;
   background-position: center;
+  position: relative;
+  min-height: 600px;
+}
+
+section.cta img.principal {
+  position: absolute;
+  bottom: -65px;
+  left: 80px;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+}
+
+section.cta .texto {
+  width: 100%;
+  max-width: 750px;
+  margin-left: auto;
+  padding: 0 100px 0 0;
+}
+
+section.cta .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-preto);
+  line-height: 1.5;
+}
+
+section.cta .texto h2 span {
+  color: var(--cor-rosa);
+}
+
+section.cta .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-texto-escuro);
+  line-height: 1.7;
+  padding: 20px 0 0 0;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.cta {
+    flex-direction: column;
+    padding: 50px 30px;
+    min-height: auto;
+  }
+  section.cta img.principal {
+    display: none;
+  }
+  section.cta .texto {
+    padding: 0 0 0 0;
+  }
 }

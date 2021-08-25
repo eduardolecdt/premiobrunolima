@@ -1,13 +1,63 @@
 /* index <section class="anfitriao"> */
 
 section.anfitriao {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 80px 0 80px;
   background-image: url('../../../../../files/images/index/background-preto.png');
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+section.anfitriao img.principal {
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+}
+
+section.anfitriao .faixa {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  background-color: var(--cor-rosa);
+}
+
+section.anfitriao .texto {
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  padding: 0 0 80px 0;
+}
+
+section.anfitriao .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+}
+
+section.anfitriao .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-texto-claro);
+  line-height: 1.7;
+  padding: 20px 0 0 0;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.anfitriao {
+    flex-direction: column-reverse;
+    padding: 50px 30px 0 30px;
+  }
+  section.anfitriao .texto {
+    padding: 0 0 50px 0;
+  }
 }

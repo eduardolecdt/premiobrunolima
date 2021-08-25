@@ -1,13 +1,44 @@
 /* index <section class="sobre"> */
 
 section.sobre {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px;
+  width: 100%;
   background-image: url('../../../../../files/images/index/background-branco.png');
   background-size: cover;
   background-position: center;
 }
 
+section.sobre .texto {
+  width: 100%;
+  max-width: 50%;
+}
+
+section.sobre .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--cor-preto);
+  line-height: 1.5;
+}
+
+section.sobre .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-texto-escuro);
+  line-height: 1.7;
+  padding: 20px 0 0 0;
+}
+
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.sobre {
+    padding: 230px 30px 70px 30px;
+  }
+  section.sobre .texto {
+    max-width: 100%;
+  }
 }
