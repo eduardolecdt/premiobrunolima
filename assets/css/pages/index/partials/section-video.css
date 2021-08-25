@@ -68,6 +68,7 @@ section.video .video .tamanho iframe {
   padding: 15px;
   border-radius: 20px;
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(25px);
 }
 
 /* Responsivo */

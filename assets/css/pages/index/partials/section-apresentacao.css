@@ -52,7 +52,7 @@ section.apresentacao .texto p {
 
 section.apresentacao .texto button {
   font-family: var(--fonte-bold);
-  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
   color: var(--cor-branco);
   background-color: var(--cor-azul);
   padding: 15px 25px;
@@ -81,5 +81,8 @@ section.apresentacao .texto button:hover {
   }
   section.apresentacao .texto {
     padding: 130px 0 0 0;
+  }
+  section.apresentacao .texto button {
+    padding: 13px 20px;
   }
 }
