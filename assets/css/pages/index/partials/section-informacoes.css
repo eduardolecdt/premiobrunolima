@@ -1,0 +1,14 @@
+/* index <section class="informacoes"> */
+
+section.informacoes {
+  display: none;
+  background-image: url('../../../../../files/images/index/background-branco.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+}

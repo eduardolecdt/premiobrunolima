@@ -1,0 +1,13 @@
+/* index <section class="sobre"> */
+
+section.sobre {
+  display: none;
+  background-image: url('../../../../../files/images/index/background-branco.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+}

@@ -1,0 +1,13 @@
+/* index <section class="fotos"> */
+
+section.fotos {
+  display: none;
+  background-image: url('../../../../../files/images/index/background-preto.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+}
