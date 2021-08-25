@@ -7,8 +7,15 @@
   --cor-branco: #FFFFFF;
   --cor-preto: #000000;
 
+  --cor-azul: #0048FF;
+  --cor-rosa: #DA0061;
+
+  --cor-texto-claro: #BFC5DC;
+  --cor-texto-escuro: #494C57;
+
   /* Fontes */
 
-  --fonte: '';
+  --fonte-bold: 'mark-pro-bold';
+  --fonte-regular: 'mark-pro-regular';
 
 }
